@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>Document</title>
+</head>
+<body class="page">
+  <header class="header">
+    <img src="./images/logo.png" alt="company logo" class="logo page__logo">
+    <ul class="header__links">
+      <li><a class="header__link" href="#">Our Hotel</a></li>
+      <li><a class="header__link" href="#">Rooms & Rates</a></li>
+      <li><a class="header__link" href="#">Facilities</a></li>
+      <li><a class="header__link" href="#">Contact Us</a></li>
+      <li><a class="header__link" href="#"><img src="./images/bi_search.png" alt="search symbol"></a></li>
+    </ul>
+  </header>
+  <main>
+    <form class="search-form">
+      <select id="choice" class="search-form__item search-form__item_type_select">
+        <option value="0" selected="selected">Select a City</option>
+      </select>
+      <input type="text" placeholder="Check In" class="search-form__item search-form__item_type_date">
+      <input type="text" placeholder="Check Out" class="search-form__item search-form__item_type_date">
+      <button class="search-form__item search-form__item_type_button">Check Availability</button>
+    </form>
+    <section class="welcome">
+      <h2 class="welcome__title">WELCOME TO BON HOTEL</h2>
+      <p class="welcome__subtitle">Good people. Good thinking. Good feeling.</p>
+      <button class="button welcome__button">EXPLORE</button>
+    </section>
+    <section class="rooms">
+      <article class="facilities">
+        <h2 class="facilities__title">Facilities</h2>
+        <ul class="facilities__items">
+          <li class="facilities__item"><img class="facilities__item-img" src="./images/dashicons_editor-kitchensink.png"
+              alt="">
+            <h3 class="facilities__item-title">Kitchen</h3>
+          </li>
+          <li class="facilities__item"><img class="facilities__item-img" src="./images/ic_twotone-pool.png" alt="">
+            <h3 class="facilities__item-title">Pool</h3>
+          </li>
+          <li class="facilities__item"><img class="facilities__item-img" src="./images/clarity_wifi-solid.png" alt="">
+            <h3 class="facilities__item-title">Wifi</h3>
+          </li>
+          <li class="facilities__item"><img class="facilities__item-img" src="./images/maki_fitness-centre-11.png"
+              alt="">
+            <h3 class="facilities__item-title">Gym</h3>
+          </li>
+          <li class="facilities__item"><img class="facilities__item-img" src="./images/bx_bx-taxi.png" alt="">
+            <h3 class="facilities__item-title">Taxi</h3>
+          </li>
+        </ul>
+      </article>
+      <h1 class="rooms__title">Rooms & Rates</h1>
+      <div class="rooms__cards">
+        <article class="room room_type_standart-twin">
+          <h2 class="room__title">Standard Twin Room</h2>
+          <button class="button room__button">Check Rates</button>
+        </article>
+        <article class="room room_type_standart">
+          <h2 class="room__title">Standard Room</h2>
+          <button class="button room__button">Check Rates</button>
+        </article>
+        <article class="room room_type_standart-view">
+          <h2 class="room__title">Standard View Room</h2>
+          <button class="button room__button">Check Rates</button>
+        </article>
+        <article class="room room_type_delux">
+          <h2 class="room__title">Deluxe Room</h2>
+          <button class="button room__button">Check Rates</button>
+        </article>
+      </div>
+      <p class="rooms__subtitle">Get a room already!</p>
+      <button class="button rooms__button">Book Now</button>
+    </section>
+  </main>
+  <footer class="footer">
+    <article class="footer__contacts">
+      <img src="./images/image 1.png" alt="company logo">
+      <h2 class="footer__contacts-text footer__contacts-text_type_h">Bon Hotels Head Office</h2>
+      <p class="footer__contacts-text footer__contacts-text_type_p">+27 434 344 432</p>
+      <p class="footer__contacts-text footer__contacts-text_type_p">info@bonhotels.com</p>
+    </article>
+    <ul class="footer__links">
+      <li class="footer__link">Our Hotels</li>
+      <li class="footer__link">Our Conferencing</li>
+      <li class="footer__link">Our Company</li>
+      <li class="footer__link">Hotel Design</li>
+      <li class="footer__link">Careers</li>
+    </ul>
+    <form class="footer__form">
+      <label class="footer__form-input-title" for="footer-subscribe-email">Subcribe for Offers</label>
+      <input class="footer__form-input" id="footer-subscribe-email" type="text" placeholder="Email Address">
+      <button class="button footer__form-button">Subcribe Now</button>
+    </form>
+  </footer>
+  <script src="script.js" type="text/css"></script>
+</body>
+</html>
